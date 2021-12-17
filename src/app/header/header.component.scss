@@ -1,70 +1,98 @@
-#header{
-    position:fixed;
-    top:0px;
-    left:0px;
-    right:0px;
-    height:100px;
-    width:100%;
-    background-color:#D35400;
+#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100px;
+  width: 100%;
+  background-color: #f1948a;
 }
 
-#gauche{
-    position:fixed;
-    top:0px;
-    left:0px;
-    height:100px;
-    width:100%;
-    background-color:#F5EEF8;
-    display:flex;
-    align-items:center;
+#gauche {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-#gauche img{
-    height:50px;
-    margin-left:20px;
+#gauche img {
+  height: 50px;
+  margin-left: 20px;
 }
 
-#menu{
-    margin-left:30px;
-    min-width:300px;
-    height:100px;
-    /*background-color:grey;*/
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;
+#menu {
+  margin-left: 30px;
+  min-width: 300px;
+  height: 100px;
+  /*background-color:grey;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-#menu button{
-    background: transparent;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
-    font-weight:bold;
-    color:#34495E;
+#menu button {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  font-weight: bold;
+  color: #2C3E50;
 }
 
-#droite{
-    position:fixed;
-    right:10px;
-    height:100px;
-    display:flex;
-    align-items:center;
+#droite {
+  position: fixed;
+  right: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#droite button{
-    background: transparent;
-    border: 1px solid black;
-    padding:5px;
-    width:100px;
-    text-shadow: 0px 0px 0px transparent;
+#droite button {
+  background: transparent;
+  border: 1px solid black;
+  padding: 5px;
+  width: 100px;
+  text-shadow: 0px 0px 0px transparent;
 }
 
-#droite button:hover{
-    background-color: azure;
+#droite button:hover {
+  background-color: azure;
 }
 
-@media screen and(max-width:800px){
-    #menu{
-        display: none;
-    }
+#menu_button {
+  width: 40px;
+  height: 30px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+#menu_button:hover {
+  background-color: #ec7063;
+}
+
+#barre {
+  width: 30px;
+  height: 6px;
+  background-color: white;
+  transition-property: background-color;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+
+#barre:hover{
+    background-color:black;
+}
+
+@media screen and(max-width:800px) {
+  #menu {
+    display: none;
+  }
 }
