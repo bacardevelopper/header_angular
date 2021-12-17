@@ -5,7 +5,7 @@
     right:0px;
     height:100px;
     width:100%;
-    background-color:#D4E6F1;
+    background-color:#D35400;
 }
 
 #gauche{
@@ -23,6 +23,7 @@
     height:50px;
     margin-left:20px;
 }
+
 #menu{
     margin-left:30px;
     min-width:300px;
@@ -30,8 +31,9 @@
     /*background-color:grey;*/
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
+
 #menu button{
     background: transparent;
     box-shadow: 0px 0px 0px transparent;
@@ -39,4 +41,30 @@
     text-shadow: 0px 0px 0px transparent;
     font-weight:bold;
     color:#34495E;
+}
+
+#droite{
+    position:fixed;
+    right:10px;
+    height:100px;
+    display:flex;
+    align-items:center;
+}
+
+#droite button{
+    background: transparent;
+    border: 1px solid black;
+    padding:5px;
+    width:100px;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+#droite button:hover{
+    background-color: azure;
+}
+
+@media screen and(max-width:800px){
+    #menu{
+        display: none;
+    }
 }
